@@ -10,8 +10,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;(require 'ess-site) ;; don't load ALL of ess, just r
-(require 'ess-r-mode)
-(ess-toggle-underscore nil)  ;; disable underscore mode
+;;(require 'ess-r-mode)
+;;(ess-toggle-underscore nil)  ;; disable underscore mode
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; buffer move

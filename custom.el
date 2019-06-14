@@ -14,7 +14,7 @@
     ("c390ae79b41d1ad8918f714eaddcbcf42c02805ba70c096c53527260cbc65eb9" default)))
  '(package-selected-packages
    (quote
-    (ess yaml-mode switch-window transpose-frame markdown-preview-mode markdown-mode+ magit impatient-mode helm flycheck-cstyle buffer-move))))
+    (ess ess-R-data-view yaml-mode switch-window transpose-frame markdown-preview-mode markdown-mode+ magit impatient-mode helm flycheck-cstyle buffer-move))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -53,9 +53,6 @@
 ;;; Set HTTP proxy
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq url-proxy-services '(("no_proxy" . "xcelenergy\\.com")
-                           ("http" . "wproxy.corp.xcelenergy.com:8080")
-			   ("https" . "wproxy.corp.xcelenergy.com:8080")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; sanify paths
