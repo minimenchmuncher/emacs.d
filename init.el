@@ -22,15 +22,13 @@
 (delete-selection-mode t)       ;; type over selection deletes selected text
 (setq ns-right-alternate-modifier 'none) ;; ignore right-side alt/opt
 
-;;; enable whitespace-mode for all buffers
-(global-whitespace-mode t)
-(setq whitespace-style '(face trailing tabs lines-tail tab-mark))
+(setq prelude-whitespace nil)
 
 ;;; no tabs
 (setq-default indent-tabs-mode nil)
 
 ;;; fill to 80 columns
-(setq-default fill-column 80)
+;;(setq-default fill-column 80)
 
 ;;; add ~/.emacs.d/vendor to load path
 (add-to-list 'load-path (concat user-emacs-directory "vendor"))
@@ -44,7 +42,8 @@
 
 (setq package-archives' (
                          ("gnu"          . "http://elpa.gnu.org/packages/")
-                         ("marmalade"    . "http://marmalade-repo.org/packages")
+                         ;;("melpa"        . "http://melpa.org/packages/")
+                         ;;("marmalade"  . "http://marmalade-repo.org/packages")
                          ("tromey"       . "http://tromey.com/elpa/")
                          ("melpa-stable" . "http://stable.melpa.org/packages/")))
 (package-initialize)
@@ -87,6 +86,6 @@
 
 ;; package requirements
 (require 'package)
-(require 'transpose-frame)
+;;(require 'transpose-frame)
 
 (setq default-directory (concat (getenv "HOME") "/"))
