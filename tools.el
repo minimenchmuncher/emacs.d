@@ -30,3 +30,18 @@
 (require 'magit)
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x M-g") 'magit-dispatch)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; dired and direx
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;(define-key dired-mode-map "i" 'dired-subtree-insert)
+;;(define-key dired-mode-map ";" 'dired-subtree-remove)
+
+(require 'popwin)
+(popwin-mode 1)
+
+(require 'direx)
+(push '(direx:direx-mode :position left :width 25 :dedicated t)
+      popwin:special-display-config)
+(global-set-key (kbd "C-x C-j") 'direx:jump-to-directory-other-window)
+;;(global-set-key (kbd "C-x C-j") 'direx:jump-to-directory)

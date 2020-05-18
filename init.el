@@ -33,19 +33,18 @@
 ;;; add ~/.emacs.d/vendor to load path
 (add-to-list 'load-path (concat user-emacs-directory "vendor"))
 
-;;; add paths
-;;;; none here.
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; ELPA
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(require 'package)
 (setq package-archives' (
                          ("gnu"          . "http://elpa.gnu.org/packages/")
-                         ;;("melpa"        . "http://melpa.org/packages/")
+                         ("melpa"        . "https://melpa.org/packages/")
                          ;;("marmalade"  . "http://marmalade-repo.org/packages")
                          ("tromey"       . "http://tromey.com/elpa/")
-                         ("melpa-stable" . "http://stable.melpa.org/packages/")))
+                         ;;("melpa-stable" . "https://stable.melpa.org/packages/")
+                         ))
 (package-initialize)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
