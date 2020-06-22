@@ -5,6 +5,18 @@
 ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; tabs
+(require 'tabbar)
+(tabbar-mode)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Ido
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'ido)
+(ido-mode t)
+(setq ido-enable-flex-matching t)
+(setq ido-create-new-buffer 'always)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; company
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -14,6 +26,36 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; ESS
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(require 'ess-site)
+
+;; turn off command echoing
+(setq ess-eval-visibly-p nil)
+
+;; R help
+(setq inferior-ess-r-help-command "help(\"%s\", help_type=\"html\")\n")
+
+;; enable function arg hint
+(require 'ess-eldoc)
+
+;; start tracebug
+(require 'ess-tracebug)
+(add-hook 'ess-post-run-hook 'ess-tracebug t)
+
+;; Code folding in ess mode
+(add-hook 'ess-mode-hook
+          (lambda()
+            (local-set-key (kbd "C-c <right>") 'hs-show-block)
+            (local-set-key (kbd "C-c <left>")  'hs-hide-block)
+            (local-set-key (kbd "C-c <up>")    'hs-hide-all)
+            (local-set-key (kbd "C-c <down>")  'hs-show-all)
+            (hs-minor-mode t)))
+(autoload 'ess-rdired "ess-rdired"
+    "View *R* objects in a dired-like buffer." t)
+
+;; activate parethesis matching for
+(show-paren-mode t)
+
 
 (setq display-buffer-alist
       '(("*R Dired"
@@ -38,6 +80,11 @@
 ;;(ess-toggle-underscore nil)  ;; disable underscore mode
 
 (require 'auto-complete-config)
+
+(add-to-list 'load-path "~/.emacs.d/autocomplete/")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/autocomplete/ac-dict")
+(define-key ac-completing-map [tab] 'ac-complete)
+
 (ac-config-default)
 (setq ac-auto-start nil)
 ;;(define-key ac-mode-map (kbd "M-TAB") 'auto-complete)
