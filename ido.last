@@ -1,0 +1,86 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/" . "R/")
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/" . "Chapter 6/")
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/" . "Exercise Files/")
+ ("c:/Users/EzraTucker/Documents/Practice/" . "Ex_Files_Learning_C_Plus_Plus/")
+ ("c:/Users/EzraTucker/Documents/Energetic/" . "eiActuarial/")
+ ("c:/tools/" . "asana-dark/")
+ ("c:/Users/EzraTucker/Documents/" . "Energetic/")
+ ("c:/Users/EzraTucker/" . ".emacs.d/")
+ ("c:/Users/" . "EzraTucker/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/Users/EzraTucker/.emacs.d/"
+ "c:/Users/EzraTucker/Documents/Energetic/eiActuarial/src/"
+ "c:/Users/EzraTucker/Documents/Energetic/eiActuarial/R/"
+ "c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/Chapter 6/"
+ "c:/Users/EzraTucker/Documents/Energetic/eiActuarial/"
+ "c:/tools/asana-dark/"
+ "c:/Users/EzraTucker/Desktop/"
+ "c:/Users/EzraTucker/Documents/Energetic/eiBase/R/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "tools.el"
+ "code.cpp"
+ "init.el"
+ "AllGenerics.R"
+ "chap06Solution.cpp"
+ "NEWS.md"
+ "chap06Challenge.cpp"
+ "CoverageSchedule-class.R"
+ "asana-dark.user.css"
+ "choco-unistall2.ps1"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/Users/EzraTucker/.emacs.d/" (24480 1182 0 0) "window.el" "transient/" "tools.el" "snippets/" "server/" "init.el" "ido.last" "elpa/" "custom.el" "colors/" "backups/" "autosaves/" "auto-save-list/" "auto-complete-config" "ac-comphist.dat" "abbrev_defs" ".gitignore" ".git/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/src/" (24478 57829 0 0) "RcppExports.o" "RcppExports.cpp" "eiActuarial.dll" "code.o" "code.cpp" ".gitignore" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/" (24478 57853 0 0) "_pkgdown.yml" "vignettes/" "tests/" "src/" "README.md" "R/" "outstanding_v2_questions.md" "NEWS.md" "NAMESPACE" "man/" "LICENSE" "inst/" "eiActuarial.Rproj" "DESCRIPTION" "changelog.css" ".Rproj.user/" ".Rhistory" ".Rbuildignore" ".gitignore" ".github/" ".git/" "../" "./")
+
+ ("c:/Users/EzraTucker/" (24478 57289 0 0) "Videos/" "Templates/" "Start Menu/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "R/" "PrintHood/" "Pictures/" "package.json" "package-lock.json" "OneDrive/" "ntuser.ini" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "node_modules/" "NetHood/" "My Documents/" "Music/" "Local Settings/" "Links/" "IntelGraphicsProfiles/" "Favorites/" "Energetic Insurance Dropbox/" "Dropbox (Personal)/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "Application Data/" "AppData/" "3D Objects/" "1.2.6.yaml~" ".viminfo" ".ssh/" ".Rhistory" ".gitconfig" ".emacs.d/" ".dotnet/" ".config/" ".bash_history" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Energetic/shinyPricing/" (24474 55143 0 0) "ui.R" "shinyPricing.Rproj" "server.R" "global.R" "deploy-prod.R" "deploy-dev.sh" "deploy-dev.R" ".gitignore" ".git/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/R/" (24478 57089 0 0) "write_model_outputs.R" "WeibullRV-class.R" "utilities-funs.R" "underwriting_funs.R" "States-funs.R" "SolarProduction-class.R" "simple_pricing_model.R" "Schedule-class.R" "ScenarioSpecification-class.R" "RV-class.R" "run_am.R" "RunParams-class.R" "RevenueSchedule-class.R" "RecontractSchedule-class.R" "RecMarket-class.R" "RcppExports.R" "RandomWalk-class.R" "Portfolio-class.R" "PolicyElement-class.R" "Policy-class.R" "PaymentSchedule-class.R" "OutputParams-class.R" "Offtaker-class.R" "NormRV-class.R" "Modules.R" "MktAvailable-class.R" "Market-class.R" "losses-funs.R" "inputs-funs.R" "higher_order_funs.R" "get_model_inputs.R" "Facility-class.R" "ElectricityMarket-class.R" "eiActuarial.R" "DefaultRateSchedule-class.R" "CoverageSchedule-class.R" "Cohort-class.R" "cache-service.R" "Association-class.R" "AllGenerics.R" "actuarial_funs_v2.R" "actuarial_funs.R" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/Chapter 6/" (24477 29635 0 0) "Winners.txt" "chap06Solution.exe" "chap06Solution.cpp" "chap06Challenge.cpp" "06_04/" "06_03/" "06_02/" "06_01/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/" (24477 29761 0 0) "Ex_Files_Learning_C_Plus_Plus/" "Ex_Files_CPlusPlus_EssT/" "../" "./")
+
+ ("c:/Program Files/" (24477 30384 0 0) "WindowsPowerShell/" "WindowsApps/" "Windows Sidebar/" "Windows Security/" "Windows Portable Devices/" "Windows Photo Viewer/" "Windows NT/" "Windows Multimedia Platform/" "Windows Media Player/" "Windows Mail/" "Windows Defender Advanced Threat Protection/" "Windows Defender/" "Uninstall Information/" "RStudio/" "R/" "nodejs/" "Mozilla Firefox/" "ModifiableWindowsApps/" "Microsoft SQL Server/" "Microsoft Office 15/" "Microsoft Office/" "Internet Explorer/" "ImageMagick-7.0.10-Q16-HDRI/" "Git/" "Emacs/" "dotnet/" "desktop.ini" "Dell/" "Common Files/" "Application Verifier/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/" (24477 19597 0 0) "Chapter 6/" "Chapter 5/" "Chapter 4/" "Chapter 3/" "Chapter 2/" "Chapter 1/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/" (24477 19586 0 0) "Exercise Files/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/" (24477 19627 0 0) "Practice/" "My Videos/" "My Pictures/" "My Music/" "GitRepos/" "Energetic/" "desktop.ini" "Custom Office Templates/" "../" "./")
+
+ ("c:/tools/asana-dark/" (24476 3518 0 0) "README.md" "LICENSE.md" "images/" "CHANGELOG.md" "asana-dark.user.css" ".git/" ".DS_Store" "../" "./")
+
+ ("c:/tools/" (24476 3592 0 0) "Tsheets-win32-x64/" "Asana-win32-x64/" "asana-dark/" "../" "./")
+
+ ("c:/Users/EzraTucker/Desktop/" (24476 65 0 0) "ImageMagick Display.lnk" "get license key.txt" "desktop.ini" "choco-uninstall.ps1" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Energetic/eiBase/R/" (24474 55081 0 0) "zzz.R" "WebApiConnection-class.R" "TypedList-class.R" "progressBars.R" "methods.R" "logging.R" "FileConnection-class.R" "dropbox.R" "DBConnection-class.R" "computation.R" "cache.R" "aaa.R" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Energetic/eiBase/" (24474 55081 0 0) "tests/" "README.md" "R/" "NAMESPACE" "man/" "LICENSE" "inst/" "eiBase.Rproj" "DESCRIPTION" ".Rbuildignore" ".gitignore" ".github/" ".git/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Energetic/" (24474 55214 0 0) "shinyPricing/" "eiDB/" "eiBase/" "eiActuarial/" "../" "./")
+
+ ("c:/Users/" (24473 35842 0 0) "Public/" "EzraTucker/" "desktop.ini" "Default User/" "Default/" "All Users/" "../" "./")
+
+ ("c:/Program Files/Emacs/" (24475 2071 0 0) "x86_64/" "Uninstall.exe" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
