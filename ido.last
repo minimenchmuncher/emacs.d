@@ -2,22 +2,43 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/" . "R/")
- ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/" . "Chapter 6/")
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Code_Clinic_C_Plus_Plus/Exercise Files/CH01/" . "solution/")
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Code_Clinic_C_Plus_Plus/Exercise Files/" . "CH01/")
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Code_Clinic_C_Plus_Plus/" . "Exercise Files/")
+ ("c:/Users/EzraTucker/Documents/Practice/caveofprogramming/" . "car-constructors/")
+ ("c:/tools/PulseAudio/etc/" . "pulse/")
+ ("c:/" . "tools/")
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/Chapter 2/02_03/" . "begin/")
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/Chapter 2/" . "02_03/")
+ ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/tests/" . "testthat/")
+ ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/" . "tests/")
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/" . "Chapter 1/")
  ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/" . "Exercise Files/")
- ("c:/Users/EzraTucker/Documents/Practice/" . "Ex_Files_Learning_C_Plus_Plus/")
+ ("c:/Users/EzraTucker/Documents/Practice/" . "caveofprogramming/")
  ("c:/Users/EzraTucker/Documents/Energetic/" . "eiActuarial/")
- ("c:/tools/" . "asana-dark/")
+ ("c:/tools/" . "PulseAudio/")
  ("c:/Users/EzraTucker/Documents/" . "Energetic/")
- ("c:/Users/EzraTucker/" . ".emacs.d/")
+ ("c:/Users/EzraTucker/" . "Documents/")
  ("c:/Users/" . "EzraTucker/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "c:/Users/EzraTucker/.emacs.d/"
- "c:/Users/EzraTucker/Documents/Energetic/eiActuarial/src/"
  "c:/Users/EzraTucker/Documents/Energetic/eiActuarial/R/"
+ "c:/Users/EzraTucker/Documents/Energetic/eiActuarial/tests/testthat/"
+ "c:/Users/EzraTucker/Documents/Practice/caveofprogramming/car-constructors/"
+ "c:/Users/EzraTucker/Documents/Practice/caveofprogramming/car/"
+ "c:/Users/EzraTucker/Documents/Practice/Ex_Files_Code_Clinic_C_Plus_Plus/Exercise Files/CH01/ezra/"
+ "c:/Users/EzraTucker/Documents/Practice/Ex_Files_Code_Clinic_C_Plus_Plus/Exercise Files/CH01/solution/"
+ "c:/Users/EzraTucker/Documents/Practice/caveofprogramming/"
+ "c:/Users/EzraTucker/.emacs.d/"
+ "c:/Users/EzraTucker/"
+ "c:/tools/PulseAudio/etc/pulse/"
+ "c:/Users/EzraTucker/Documents/Energetic/shinyPricing/"
+ "c:/Users/EzraTucker/Documents/Energetic/eiActuarial/inst/testruns/"
+ "c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/Chapter 1/"
+ "c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/Chapter 2/02_03/begin/"
+ "c:/Users/EzraTucker/Documents/Energetic/eiActuarial/src/"
  "c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/Chapter 6/"
  "c:/Users/EzraTucker/Documents/Energetic/eiActuarial/"
  "c:/tools/asana-dark/"
@@ -27,55 +48,97 @@
 
 ;; ----- ido-work-file-list -----
 (
- "tools.el"
- "code.cpp"
- "init.el"
- "AllGenerics.R"
- "chap06Solution.cpp"
- "NEWS.md"
- "chap06Challenge.cpp"
- "CoverageSchedule-class.R"
- "asana-dark.user.css"
- "choco-unistall2.ps1"
+ "RandomWalk-class.R"
+ "helper_data.R"
+ "helper_calculations.R"
+ "test_policy-class.R"
+ "test_am_v2.R"
+ "car.h"
+ "car.hpp"
+ "WeatherData.h"
+ "WeatherStatistics.hpp"
+ "WeatherStatistics.cpp"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/Users/EzraTucker/.emacs.d/" (24480 1182 0 0) "window.el" "transient/" "tools.el" "snippets/" "server/" "init.el" "ido.last" "elpa/" "custom.el" "colors/" "backups/" "autosaves/" "auto-save-list/" "auto-complete-config" "ac-comphist.dat" "abbrev_defs" ".gitignore" ".git/" "../" "./")
+ ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/R/" (24498 42365 0 0) "write_model_outputs.R" "WeibullRV-class.R" "utilities-funs.R" "underwriting_funs.R" "States-funs.R" "SolarProduction-class.R" "simple_pricing_model.R" "Schedule-class.R" "ScenarioSpecification-class.R" "RV-class.R" "run_am.R" "RunParams-class.R" "RevenueSchedule-class.R" "RecontractSchedule-class.R" "RecMarket-class.R" "RandomWalk-class.R" "Portfolio-class.R" "PolicyElement-class.R" "Policy-class.R" "PaymentSchedule-class.R" "OutputParams-class.R" "Offtaker-class.R" "NormRV-class.R" "Modules.R" "MktAvailable-class.R" "Market-class.R" "losses-funs.R" "inputs-funs.R" "higher_order_funs.R" "get_model_inputs.R" "Facility-class.R" "ElectricityMarket-class.R" "eiActuarial.R" "DefaultRateSchedule-class.R" "CoverageSchedule-class.R" "Cohort-class.R" "cache-service.R" "Association-class.R" "AllGenerics.R" "actuarial_funs_v2.R" "actuarial_funs.R" "../" "./")
 
- ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/src/" (24478 57829 0 0) "RcppExports.o" "RcppExports.cpp" "eiActuarial.dll" "code.o" "code.cpp" ".gitignore" "../" "./")
+ ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/" (24498 42275 0 0) "_pkgdown.yml" "vignettes/" "tests/" "src/" "README.md" "R/" "outstanding_v2_questions.md" "NEWS.md" "NAMESPACE" "man/" "LICENSE" "inst/" "eiActuarial.Rproj" "DESCRIPTION" "changelog.css" ".Rproj.user/" ".Rhistory" ".RData" ".Rbuildignore" ".gitignore" ".github/" ".git/" "../" "./")
 
- ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/" (24478 57853 0 0) "_pkgdown.yml" "vignettes/" "tests/" "src/" "README.md" "R/" "outstanding_v2_questions.md" "NEWS.md" "NAMESPACE" "man/" "LICENSE" "inst/" "eiActuarial.Rproj" "DESCRIPTION" "changelog.css" ".Rproj.user/" ".Rhistory" ".Rbuildignore" ".gitignore" ".github/" ".git/" "../" "./")
+ ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/tests/testthat/" (24498 42160 0 0) "_snaps/" "test_Weibull_inputs.R" "test_states.R" "test_simple_policy.R" "test_simplepricing.R" "test_sensitivities.R" "test_schedule-class.R" "test_scenario_runs.R" "test_reporting.R" "test_recontract_rates.R" "test_random_variables.R" "test_Portfolio-class.R" "test_policy-class.R" "test_module_debtPaymentMaxLimit.R" "test_modulesmodels.R" "test_loss_calculation.R" "test_get_inputs_yaml.R" "test_get_inputs_csv.R" "test_facility-class.R" "test_extra_Matrix.R" "test_DefaultRateSchedule-class.R" "test_CoverageSchedule-class.R" "test_am_v2.R" "helper_schedules.R" "helper_modulesmodels.R" "helper_get_inputs_yaml.R" "helper_data.R" "helper_calculations.R" "../" "./")
 
- ("c:/Users/EzraTucker/" (24478 57289 0 0) "Videos/" "Templates/" "Start Menu/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "R/" "PrintHood/" "Pictures/" "package.json" "package-lock.json" "OneDrive/" "ntuser.ini" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "node_modules/" "NetHood/" "My Documents/" "Music/" "Local Settings/" "Links/" "IntelGraphicsProfiles/" "Favorites/" "Energetic Insurance Dropbox/" "Dropbox (Personal)/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "Application Data/" "AppData/" "3D Objects/" "1.2.6.yaml~" ".viminfo" ".ssh/" ".Rhistory" ".gitconfig" ".emacs.d/" ".dotnet/" ".config/" ".bash_history" "../" "./")
+ ("c:/Users/EzraTucker/.emacs.d/" (24496 15482 0 0) "window.el" "transient/" "tools.el" "snippets/" "server/" "init.el" "ido.last" "flycheck_tools.el" "eshell/" "elpa/" "custom.el" "colors/" "backups/" "autosaves/" "auto-save-list/" "auto-complete-config" "ac-comphist.dat" "abbrev_defs" ".gitignore" ".git/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Code_Clinic_C_Plus_Plus/Exercise Files/CH01/solution/" (24496 30075 0 0) "WeatherStatisticsMain.cpp" "WeatherStatistics.hpp" "WeatherStatistics.exe" "WeatherStatistics.cpp" "Makefile" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Code_Clinic_C_Plus_Plus/Exercise Files/CH01/ezra/" (24496 14142 0 0) "WeatherData.h" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Code_Clinic_C_Plus_Plus/Exercise Files/CH01/" (24496 4010 0 0) "solution/" "resources/" "ezra/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/caveofprogramming/" (24492 24853 0 0) "whileloop.exe" "whileloop.cpp" "twodloop.exe" "twodloop.cpp" "twodarrays.exe" "twodarrays.cpp" "switchstatements.exe" "switchstatements.cpp" "src.txt" "helloworld.exe" "helloworld.cpp" "dowhileloop.exe" "dowhileloop.cpp" "car-constructors/" "car/" "arraysandloops.exe" "arraysandloops.cpp" "arrays.exe" "arrays.cpp" "aninteractiveprogram.exe" "aninteractiveprogram.cpp" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Code_Clinic_C_Plus_Plus/Exercise Files/CH01/resources/" (24496 1821 0 0) "Environmental_Data_Deep_Moor_2015.txt" "Environmental_Data_Deep_Moor_2014.txt" "Environmental_Data_Deep_Moor_2013.txt" "Environmental_Data_Deep_Moor_2012.txt" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Code_Clinic_C_Plus_Plus/Exercise Files/" (24496 1824 0 0) "CH06/" "CH05/" "CH04/" "CH03/" "CH02/" "CH01/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Code_Clinic_C_Plus_Plus/" (24496 1821 0 0) "Exercise Files/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/" (24496 1832 0 0) "Ex_Files_Learning_C_Plus_Plus/" "Ex_Files_CPlusPlus_EssT/" "Ex_Files_Code_Clinic_C_Plus_Plus/" "caveofprogramming/" "../" "./")
+
+ ("c:/Users/EzraTucker/" (24496 1874 0 0) "Videos/" "Templates/" "Start Menu/" "source/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "R/" "PrintHood/" "Pictures/" "package.json" "package-lock.json" "OneDrive/" "ntuser.ini" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "node_modules/" "NetHood/" "My Documents/" "Music/" "macintosh.js/" "Local Settings/" "Links/" "IntelGraphicsProfiles/" "Favorites/" "Energetic Insurance Dropbox/" "Dropbox (Personal)/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "config.xlaunch" "Application Data/" "AppData/" "3D Objects/" "1.2.6.yaml~" ".vivaldi_reporting_data" ".viminfo" ".templateengine/" ".ssh/" ".Rprofile" ".Rhistory" ".history" ".gitconfig" ".emacs.d/" ".dotnet/" ".config/" ".bash_history" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/inst/testruns/" (24491 58444 0 0) "tejon-ranch.R" "siemens.R" "rockypeak.R" "phantom-ppl.R" "nextera-irm.R" "nec-sune.R" "mpdc.R" "meridian.R" "indicative-pricing.R" "gonzolas.R" "excelsior.R" "cc-tahoe.R" "byd.R" "base-approval.R" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/caveofprogramming/car-constructors/" (24492 22859 0 0) "main.cpp" "car.h" "car.exe" "car.cpp" "../" "./")
+
+ ("c:/tools/PulseAudio/etc/pulse/" (24489 26706 0 0) "system.pa" "default.pa" "daemon.conf" "client.conf" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Energetic/eiBase/" (24478 57532 0 0) "tests/" "README.md" "R/" "NAMESPACE" "man/" "LICENSE" "inst/" "eiBase.Rproj" "DESCRIPTION" ".Rproj.user/" ".Rhistory" ".RData" ".Rbuildignore" ".gitignore" ".github/" ".git/" "../" "./")
+
+ ("c:/Program Files/" (24489 26256 0 0) "WindowsPowerShell/" "WindowsApps/" "Windows Sidebar/" "Windows Security/" "Windows Portable Devices/" "Windows Photo Viewer/" "Windows NT/" "Windows Multimedia Platform/" "Windows Media Player/" "Windows Mail/" "Windows Defender Advanced Threat Protection/" "Windows Defender/" "VcXsrv/" "Uninstall Information/" "RStudio/" "R/" "PowerShell/" "nodejs/" "Mozilla Firefox/" "ModifiableWindowsApps/" "Microsoft SQL Server/" "Microsoft Office 15/" "Microsoft Office/" "Internet Explorer/" "Intel/" "ImageMagick-7.0.10-Q16-HDRI/" "Git/" "Emacs/" "dotnet/" "desktop.ini" "Dell/" "Common Files/" "Application Verifier/" "7-Zip/" "../" "./")
+
+ ("c:/tools/PulseAudio/etc/" (24489 26512 0 0) "pulse/" "../" "./")
+
+ ("c:/tools/PulseAudio/bin/" (24489 26517 0 0) "pulseaudio.exe" "parecord.exe" "parec.exe" "paplay.exe" "pamon.exe" "pactl.exe" "pacat.exe" "libvorbisfile-3.dll" "libvorbisenc-2.dll" "libvorbis-0.dll" "libspeexdsp-1.dll" "libspeex-1.dll" "libsndfile-1.dll" "libsamplerate-0.dll" "libpulsecore-1.1.dll" "libpulsecommon-1.1.dll" "libpulse-simple-0.dll" "libpulse-0.dll" "libprotocol-simple.dll" "libprotocol-native.dll" "libprotocol-http.dll" "libprotocol-esound.dll" "libprotocol-cli.dll" "libpcreposix-0.dll" "libpcre-0.dll" "liborc-0.4-0.dll" "libogg-0.dll" "libltdl-7.dll" "libjson-0.dll" "libintl-8.dll" "libFLAC-8.dll" "libcli.dll" "../" "./")
+
+ ("c:/tools/PulseAudio/" (24489 26515 0 0) "share/" "lib/" "etc/" "bin/" "../" "./")
+
+ ("c:/tools/" (24489 26523 0 0) "PulseAudio/" "../" "./")
+
+ ("c:/Users/EzraTucker/Desktop/" (24489 22720 0 0) "desktop.ini" "Companies Offer Creative Solutions to Worker Burnout.pdf" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/inst/" (24474 55087 0 0) "testruns/" "modelinputs_test_override.yml" "modelinputs_OLD.yml" "modelinputs_newfmt_for_v2.yaml" "modelinputs_defaultratetest.yml" "modelinputs_CHANNELAPPROVED_20180828.yaml" "modelinputs_BASE_v2.yml" "modelinputs_BASE.yml" "get_pricing.sh" "get_pricing.R" "get_pricing.ps1" "CurrentExposure.R" "CalCom-Tejon_20190603_V2.yaml" "approval_runs_v2.Rmd" "approval_runs_v2.R" "approval_runs_v2.nb.html" "api/" "actuarial_outputs_SAMPLE.csv" "actuarial_model_run.R" "actuarial_funs_v2_SCRATCH.R" "20180822_Actuarial_Model_NOSTOCH.xlsx" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/caveofprogramming/car/" (24488 2322 0 0) "main.cpp" "car.hpp" "car.exe" "car.cpp" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/Chapter 1/" (24477 19597 0 0) "HelloWorldSolution.exe" "HelloWorldSolution.cpp" "HelloWorldChallenge.exe" "HelloWorldChallenge.cpp" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/Chapter 2/02_03/begin/" (24477 19596 0 0) "Chap2_3_Begin.exe" "Chap2_3_Begin.cpp" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/Chapter 2/02_03/" (24477 19596 0 0) "end/" "begin/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/Chapter 2/" (24477 19595 0 0) "Chap2Solution.exe" "Chap2Solution.cpp" "Chap2Challenge.cpp" "02_05/" "02_04/" "02_03/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/" (24487 1502 0 0) "Visual Studio 2019/" "Practice/" "OneNote Notebooks/" "My Videos/" "My Pictures/" "My Music/" "GitRepos/" "Energetic/" "desktop.ini" "Custom Office Templates/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/src/" (24484 22152 0 0) "RcppExports.o" "eiActuarial.dll" "code.o" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Energetic/" (24485 34129 0 0) "Sources/" "shinyPricing/" "eiDB/" "eiBase/" "eiActuarial.wiki/" "eiActuarial/" "../" "./")
+
+ ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/tests/" (24474 55087 0 0) "testthat.R" "testthat/" "../" "./")
 
  ("c:/Users/EzraTucker/Documents/Energetic/shinyPricing/" (24474 55143 0 0) "ui.R" "shinyPricing.Rproj" "server.R" "global.R" "deploy-prod.R" "deploy-dev.sh" "deploy-dev.R" ".gitignore" ".git/" "../" "./")
 
- ("c:/Users/EzraTucker/Documents/Energetic/eiActuarial/R/" (24478 57089 0 0) "write_model_outputs.R" "WeibullRV-class.R" "utilities-funs.R" "underwriting_funs.R" "States-funs.R" "SolarProduction-class.R" "simple_pricing_model.R" "Schedule-class.R" "ScenarioSpecification-class.R" "RV-class.R" "run_am.R" "RunParams-class.R" "RevenueSchedule-class.R" "RecontractSchedule-class.R" "RecMarket-class.R" "RcppExports.R" "RandomWalk-class.R" "Portfolio-class.R" "PolicyElement-class.R" "Policy-class.R" "PaymentSchedule-class.R" "OutputParams-class.R" "Offtaker-class.R" "NormRV-class.R" "Modules.R" "MktAvailable-class.R" "Market-class.R" "losses-funs.R" "inputs-funs.R" "higher_order_funs.R" "get_model_inputs.R" "Facility-class.R" "ElectricityMarket-class.R" "eiActuarial.R" "DefaultRateSchedule-class.R" "CoverageSchedule-class.R" "Cohort-class.R" "cache-service.R" "Association-class.R" "AllGenerics.R" "actuarial_funs_v2.R" "actuarial_funs.R" "../" "./")
-
  ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/Chapter 6/" (24477 29635 0 0) "Winners.txt" "chap06Solution.exe" "chap06Solution.cpp" "chap06Challenge.cpp" "06_04/" "06_03/" "06_02/" "06_01/" "../" "./")
-
- ("c:/Users/EzraTucker/Documents/Practice/" (24477 29761 0 0) "Ex_Files_Learning_C_Plus_Plus/" "Ex_Files_CPlusPlus_EssT/" "../" "./")
-
- ("c:/Program Files/" (24477 30384 0 0) "WindowsPowerShell/" "WindowsApps/" "Windows Sidebar/" "Windows Security/" "Windows Portable Devices/" "Windows Photo Viewer/" "Windows NT/" "Windows Multimedia Platform/" "Windows Media Player/" "Windows Mail/" "Windows Defender Advanced Threat Protection/" "Windows Defender/" "Uninstall Information/" "RStudio/" "R/" "nodejs/" "Mozilla Firefox/" "ModifiableWindowsApps/" "Microsoft SQL Server/" "Microsoft Office 15/" "Microsoft Office/" "Internet Explorer/" "ImageMagick-7.0.10-Q16-HDRI/" "Git/" "Emacs/" "dotnet/" "desktop.ini" "Dell/" "Common Files/" "Application Verifier/" "../" "./")
 
  ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/Exercise Files/" (24477 19597 0 0) "Chapter 6/" "Chapter 5/" "Chapter 4/" "Chapter 3/" "Chapter 2/" "Chapter 1/" "../" "./")
 
  ("c:/Users/EzraTucker/Documents/Practice/Ex_Files_Learning_C_Plus_Plus/" (24477 19586 0 0) "Exercise Files/" "../" "./")
 
- ("c:/Users/EzraTucker/Documents/" (24477 19627 0 0) "Practice/" "My Videos/" "My Pictures/" "My Music/" "GitRepos/" "Energetic/" "desktop.ini" "Custom Office Templates/" "../" "./")
-
  ("c:/tools/asana-dark/" (24476 3518 0 0) "README.md" "LICENSE.md" "images/" "CHANGELOG.md" "asana-dark.user.css" ".git/" ".DS_Store" "../" "./")
 
- ("c:/tools/" (24476 3592 0 0) "Tsheets-win32-x64/" "Asana-win32-x64/" "asana-dark/" "../" "./")
-
- ("c:/Users/EzraTucker/Desktop/" (24476 65 0 0) "ImageMagick Display.lnk" "get license key.txt" "desktop.ini" "choco-uninstall.ps1" "../" "./")
-
  ("c:/Users/EzraTucker/Documents/Energetic/eiBase/R/" (24474 55081 0 0) "zzz.R" "WebApiConnection-class.R" "TypedList-class.R" "progressBars.R" "methods.R" "logging.R" "FileConnection-class.R" "dropbox.R" "DBConnection-class.R" "computation.R" "cache.R" "aaa.R" "../" "./")
-
- ("c:/Users/EzraTucker/Documents/Energetic/eiBase/" (24474 55081 0 0) "tests/" "README.md" "R/" "NAMESPACE" "man/" "LICENSE" "inst/" "eiBase.Rproj" "DESCRIPTION" ".Rbuildignore" ".gitignore" ".github/" ".git/" "../" "./")
-
- ("c:/Users/EzraTucker/Documents/Energetic/" (24474 55214 0 0) "shinyPricing/" "eiDB/" "eiBase/" "eiActuarial/" "../" "./")
 
  ("c:/Users/" (24473 35842 0 0) "Public/" "EzraTucker/" "desktop.ini" "Default User/" "Default/" "All Users/" "../" "./")
 

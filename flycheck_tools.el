@@ -39,7 +39,9 @@
 (setq ess-eval-visibly-p nil)
 
 ;; R help
-(setq inferior-ess-r-help-command "help(\"%s\", help_type=\"html\")\n")
+;; Remember in .Rprofile to set options(help_type = "text")
+(setq inferior-ess-help-command "utils::help(\"%s\")\n")
+;;(setq inferior-ess-r-help-command "help(\"%s\", help_type=\"html\")\n")
 
 ;; enable function arg hint
 (require 'ess-eldoc)
@@ -161,7 +163,8 @@
 
 (require 'direx)
 (push '(direx:direx-mode :position left :width 25 :dedicated t)
-      popwin:special-display-config)
+       popwin:special-display-config)
+
 (global-set-key (kbd "C-x C-j") 'direx:jump-to-directory-other-window)
 ;;(global-set-key (kbd "C-x C-j") 'direx:jump-to-directory)
 
