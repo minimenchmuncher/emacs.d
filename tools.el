@@ -8,16 +8,19 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; snippets
+(ensure-package-installed 'yasnippet)
 (require 'yasnippet)
 (yas-global-mode 1)
 
 ;; tabs
+(ensure-package-installed 'tabbar)
 (require 'tabbar)
 (tabbar-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Ido
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(ensure-package-installed 'ido)
 (require 'ido)
 (ido-mode t)
 (setq ido-enable-flex-matching t)
@@ -33,6 +36,7 @@
 ;;; ESS
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(ensure-package-installed 'ess)
 (require 'ess-site)
 
 ;; turn off command echoing
@@ -87,6 +91,9 @@
 ;;(require 'ess-r-mode)
 ;;(ess-toggle-underscore nil)  ;; disable underscore mode
 
+(ensure-package-installed 'auto-complete)
+;;(ensure-package-installed 'auto-complete-config)
+
 (use-package auto-complete
   :ensure t
   :init
@@ -105,6 +112,7 @@
 ;;(define-key ac-completing-map [return] nil)
 ;;(setq ac-quick-help-delay 0.1)
 
+(ensure-package-installed 'flycheck)
 (use-package flycheck
   :ensure t
   :init
@@ -115,6 +123,7 @@
                                  "C:/Users/EzraTucker/R/win-library/4.0/Rcpp/include"))))
 
 ;; C/C++ compile
+(ensure-package-installed 'modern-cpp-font-lock)
 (use-package modern-cpp-font-lock
 :ensure t)
 
@@ -134,7 +143,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; buffer move
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
+(ensure-package-installed 'buffer-move)
 (require 'buffer-move)
 (global-set-key (kbd "<C-S-up>")    'buf-move-up)
 (global-set-key (kbd "<C-S-down>")  'buf-move-down)
@@ -145,6 +154,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; magit (for git)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(ensure-package-installed 'magit)
 (use-package magit
   :ensure t
   :init
@@ -158,6 +168,7 @@
 ;;(define-key dired-mode-map "i" 'dired-subtree-insert)
 ;;(define-key dired-mode-map ";" 'dired-subtree-remove)
 
+(ensure-package-installed 'popwin 'direx)
 (require 'popwin)
 (popwin-mode 1)
 

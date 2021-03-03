@@ -9,11 +9,24 @@
 ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(defun ensure-package-installed (&rest packages)
+  "Assure every package is installed, ask for installation if it’s not.
+
+Return a list of installed packages or nil for every skipped package."
+  (mapcar
+   (lambda (package)
+     ;; (package-installed-p 'evil)
+     (if (package-installed-p package)
+         nil
+       (if (y-or-n-p (format "Package %s is missing. Install it? " package))
+           (package-install package)
+         package)))
+   packages))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; basic config
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(require 'cl)                   ;; common lisp compatibility
 (server-start)                  ;; start server so clients can attach
 (setq make-backup-files nil)    ;; don't create file~ files
 (setq inhibit-startup-screen t) ;; don't show startup screen
@@ -89,10 +102,6 @@
 ;;; load encrypted secrets file if exists
 (if (file-exists-p (concat user-emacs-directory "secrets.el.gpg"))
     (load-config "secrets.el.gpg"))
-
-
-
-
 
 ;; package requirements
 (require 'package)

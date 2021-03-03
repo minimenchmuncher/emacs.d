@@ -50,6 +50,7 @@
 (windmove-default-keybindings)
 (setq windmove-wrap-around t)
 
+(ensure-package-installed 'switch-window)
 ;;; enable visual window switcher
 (require 'switch-window)
 (global-set-key (kbd "C-x o") 'switch-window)
