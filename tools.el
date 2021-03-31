@@ -8,9 +8,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; snippets
-(ensure-package-installed 'yasnippet)
-(require 'yasnippet)
-(yas-global-mode 1)
+;;(ensure-package-installed 'yasnippet)
+;;(require 'yasnippet)
+;;(yas-global-mode 1)
 
 ;; tabs
 (ensure-package-installed 'tabbar)
@@ -47,8 +47,8 @@
 (setq inferior-ess-help-command "utils::help(\"%s\")\n")
 ;;(setq inferior-ess-r-help-command "help(\"%s\", help_type=\"html\")\n")
 
-;; enable function arg hint
-(require 'ess-eldoc)
+;;; enable function arg hint
+;;;(require 'ess-eldoc)
 
 ;; start tracebug
 (require 'ess-tracebug)
@@ -67,6 +67,21 @@
 
 ;; activate parethesis matching for
 (show-paren-mode t)
+
+;; change fontlock (syntax highlighting) rules
+(setq ess-R-font-lock-keywords
+      '((ess-R-fl-keyword:keywords   . t)
+        (ess-R-fl-keyword:constants  . t)
+        (ess-R-fl-keyword:modifiers  . t)
+        (ess-R-fl-keyword:fun-defs   . t)
+        (ess-R-fl-keyword:assign-ops . t)
+        (ess-R-fl-keyword:%op%       . t)
+        (ess-fl-keyword:fun-calls    . t)
+        (ess-fl-keyword:numbers)
+        (ess-fl-keyword:operators . t)
+        (ess-fl-keyword:delimiters)
+        (ess-fl-keyword:=)
+        (ess-R-fl-keyword:F&T)))
 
 
 (setq display-buffer-alist
@@ -113,14 +128,16 @@
 ;;(setq ac-quick-help-delay 0.1)
 
 (ensure-package-installed 'flycheck)
-(use-package flycheck
-  :ensure t
-  :init
-  (global-flycheck-mode t))
+(require 'flycheck)
+(add-hook 'ess-mode-hook
+          (lambda () (flycheck-mode t)))
+
 (add-hook 'c++-mode-hook
-          (lambda () (setq flycheck-gcc-include-path
+          (lambda ()
+            (setq flycheck-gcc-include-path
                            (list "C:/Program Files/R/R-4.0.3/include"
-                                 "C:/Users/EzraTucker/R/win-library/4.0/Rcpp/include"))))
+                                 "C:/Users/EzraTucker/R/win-library/4.0/Rcpp/include"))
+            ))
 
 ;; C/C++ compile
 (ensure-package-installed 'modern-cpp-font-lock)
