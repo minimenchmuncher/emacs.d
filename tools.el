@@ -68,6 +68,25 @@
 ;; activate parethesis matching for
 (show-paren-mode t)
 
+;; enable skeleton-pair insert globally
+(setq skeleton-pair t)
+;;(setq skeleton-pair-on-word t)
+;; Uncomment if curly braces won't close in .R files
+;; https://github.com/emacs-ess/ESS/issues/296#issuecomment-189614821
+;;(define-key ess-mode-map (kbd "{") nil)
+;;(define-key ess-mode-map (kbd "}") nil) 
+(global-set-key (kbd "(") 'skeleton-pair-insert-maybe)
+(global-set-key (kbd "[") 'skeleton-pair-insert-maybe)
+(global-set-key (kbd "{") 'skeleton-pair-insert-maybe)
+(global-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
+(global-set-key (kbd "\'") 'skeleton-pair-insert-maybe)
+(global-set-key (kbd "\`") 'skeleton-pair-insert-maybe)
+(global-set-key (kbd "<") 'skeleton-pair-insert-maybe)
+
+;; and rainbow parens
+(ensure-package-installed 'rainbow-delimiters)
+(add-hook 'ess-mode-hook 'rainbow-delimiters-mode)
+
 ;; change fontlock (syntax highlighting) rules
 (setq ess-R-font-lock-keywords
       '((ess-R-fl-keyword:keywords   . t)
