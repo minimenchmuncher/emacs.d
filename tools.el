@@ -68,21 +68,6 @@
 ;; activate parethesis matching for
 (show-paren-mode t)
 
-;; enable skeleton-pair insert globally
-(setq skeleton-pair t)
-;;(setq skeleton-pair-on-word t)
-;; Uncomment if curly braces won't close in .R files
-;; https://github.com/emacs-ess/ESS/issues/296#issuecomment-189614821
-;;(define-key ess-mode-map (kbd "{") nil)
-;;(define-key ess-mode-map (kbd "}") nil) 
-(global-set-key (kbd "(") 'skeleton-pair-insert-maybe)
-(global-set-key (kbd "[") 'skeleton-pair-insert-maybe)
-(global-set-key (kbd "{") 'skeleton-pair-insert-maybe)
-(global-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
-(global-set-key (kbd "\'") 'skeleton-pair-insert-maybe)
-(global-set-key (kbd "\`") 'skeleton-pair-insert-maybe)
-(global-set-key (kbd "<") 'skeleton-pair-insert-maybe)
-
 ;; and rainbow parens
 (ensure-package-installed 'rainbow-delimiters)
 (add-hook 'ess-mode-hook 'rainbow-delimiters-mode)
@@ -123,23 +108,45 @@
 
 ;;(require 'ess-site) ;; don't load ALL of ess, just r
 ;;(require 'ess-r-mode)
-;;(ess-toggle-underscore nil)  ;; disable underscore mode
 
 (ensure-package-installed 'auto-complete)
+(ensure-package-installed 'company)
+(require 'auto-complete)
+(require 'company)
+;; according to ESS docs, company mode gets activated automatically
+(define-key company-active-map (kbd "M-h") 'company-show-doc-buffer)
+;; redefine some keys for more convience in inferior R buffers
+(define-key company-active-map (kbd "M-n") nil)
+(define-key company-active-map (kbd "M-p") nil)
+(define-key company-active-map (kbd "M-,") 'company-select-next)
+(define-key company-active-map (kbd "M-k") 'company-select-previous)
+
+(define-key company-active-map [return] nil)
+(define-key company-active-map [tab] 'company-complete-common)
+(define-key company-active-map (kbd "TAB") 'company-complete-common)
+(define-key company-active-map (kbd "M-TAB") 'company-complete-selection)
+
+;; yaml- I use yaml files a lot
+(ensure-package-installed 'yaml-mode)
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))  ;; handling of .yml files
+
+;; according to ESS docs, company mode 
 ;;(ensure-package-installed 'auto-complete-config)
 
-(use-package auto-complete
-  :ensure t
-  :init
-  (progn
-    (ac-config-default)
-    (global-auto-complete-mode t)
-    ))
 
-(require 'auto-complete-config)
-(add-to-list 'load-path "~/.emacs.d/autocomplete/")
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/autocomplete/ac-dict")
-(define-key ac-completing-map [tab] 'ac-complete)
+;; (use-package auto-complete
+;;   :ensure t
+;;   :init
+;;   (progn
+;;     (ac-config-default)
+;;     (global-auto-complete-mode t)
+;;     ))
+
+;; (require 'auto-complete-config)
+;; (add-to-list 'load-path "~/.emacs.d/autocomplete/")
+;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/autocomplete/ac-dict")
+;; (define-key ac-completing-map [tab] 'ac-complete)
 
 ;;(setq ac-auto-start nil)
 ;;(define-key ac-mode-map (kbd "M-TAB") 'auto-complete)
