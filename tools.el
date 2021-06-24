@@ -13,9 +13,55 @@
 ;;(yas-global-mode 1)
 
 ;; tabs
-(ensure-package-installed 'tabbar)
-(require 'tabbar)
-(tabbar-mode)
+;;(ensure-package-installed 'tabbar)
+;;(require 'tabbar)
+(use-package centaur-tabs
+  :demand
+  :config
+  (centaur-tabs-mode t)
+  :bind
+  ("C-<prior>" . centaur-tabs-backward)
+  ("C-<next>" . centaur-tabs-forward))
+(centaur-tabs-headline-match)
+;; (setq centaur-tabs-style "wave")
+(setq centaur-tabs-plain-icons t)
+(setq centaur-tabs-set-modified-marker t)
+(setq centaur-tabs-modified-marker "*")
+
+;; (ensure-package-installed 'centaur-tabs)
+;; (require 'centaur-tabs)
+;; (centaur-tabs-mode t)
+;; (global-set-key (kbd "C-<prior>")  'centaur-tabs-backward)
+;; (global-set-key (kbd "C-<next>") 'centaur-tabs-forward)
+
+(defun centaur-tabs-hide-tab (x)
+  "Do no to show buffer X in tabs."
+  (let ((name (format "%s" x)))
+    (or
+     ;; Current window is not dedicated window.
+     (window-dedicated-p (selected-window))
+
+     ;; Buffer name not match below blacklist.
+     (string-prefix-p "*epc" name)
+     (string-prefix-p "*helm" name)
+     (string-prefix-p "*Helm" name)
+     (string-prefix-p "*Compile-Log*" name)
+     (string-prefix-p "*lsp" name)
+     (string-prefix-p "*company" name)
+     (string-prefix-p "*Flycheck" name)
+     (string-prefix-p "*tramp" name)
+     (string-prefix-p " *Mini" name)
+     (string-prefix-p "*help" name)
+     (string-prefix-p "*straight" name)
+     (string-prefix-p " *temp" name)
+     (string-prefix-p "*Help" name)
+     (string-prefix-p "*mybuf" name)
+     (string-prefix-p "*R" name)
+
+     ;; Is not magit buffer.
+     (and (string-prefix-p "magit" name)
+	  (not (file-name-extension name)))
+     )))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Ido
@@ -27,14 +73,14 @@
 (setq ido-create-new-buffer 'always)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; company
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;(add-hook 'after-init-hook 'global-company-mode)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; ESS
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; general highlighting for prog-mode
+(add-hook 'prog-mode-hook
+          (lambda ()
+            (font-lock-add-keywords nil
+                                    '(("\\<\\(YT\\|FIXME\\|TODO\\|BUG\\):" 1 font-lock-warning-face t)))))
 
 (ensure-package-installed 'ess)
 (require 'ess-site)
@@ -106,13 +152,23 @@
          (window-width . 0.25)
          (reusable-frames . nill))))
 
-;;(require 'ess-site) ;; don't load ALL of ess, just r
-;;(require 'ess-r-mode)
+;; edit roxy template
+;; ess-roxy-update-entry
+(setq ess-roxy-template-alist '(("description" . " content for description")
+                                ("details" . "content for details")
+                                ("title" . "")
+                                ("param" . "")
+                                ("return" . "")
+                                ("export" . "")
+                                ("author" . "Ezra Tucker")))
+
 
 (ensure-package-installed 'auto-complete)
 (ensure-package-installed 'company)
 (require 'auto-complete)
 (require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
+
 ;; according to ESS docs, company mode gets activated automatically
 (define-key company-active-map (kbd "M-h") 'company-show-doc-buffer)
 ;; redefine some keys for more convience in inferior R buffers
