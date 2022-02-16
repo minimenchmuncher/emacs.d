@@ -7,14 +7,6 @@
 ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; snippets
-;;(ensure-package-installed 'yasnippet)
-;;(require 'yasnippet)
-;;(yas-global-mode 1)
-
-;; tabs
-;;(ensure-package-installed 'tabbar)
-;;(require 'tabbar)
 (use-package centaur-tabs
   :demand
   :config
@@ -22,11 +14,18 @@
   :bind
   ("C-<prior>" . centaur-tabs-backward)
   ("C-<next>" . centaur-tabs-forward))
+(setq
+ centaur-tabs-set-close-button t
+;; centaur-tabs-style "wave"
+ centaur-tabs-set-bar 'under
+ centaur-tabs-set-modified-marker t
+ centaur-tabs-modified-marker "*"
+ centaur-tabs-cycle-scope 'tabs)
 (centaur-tabs-headline-match)
-;; (setq centaur-tabs-style "wave")
+(setq centaur-tabs-set-icons t)
 (setq centaur-tabs-plain-icons t)
-(setq centaur-tabs-set-modified-marker t)
-(setq centaur-tabs-modified-marker "*")
+
+
 
 ;; (ensure-package-installed 'centaur-tabs)
 ;; (require 'centaur-tabs)
@@ -137,20 +136,20 @@
 (setq display-buffer-alist
       '(("*R Dired"
          (display-buffer-reuse-window display-buffer-in-side-window)
-         (side . left)
+         (side . right)
          (slot . -1)
          (window-width . 0.25)
-         (reusable-frames . nil))
+         (reusable-frames . t))
         ("*R"
          (display-buffer-reuse-window display-buffer-at-bottom)
          (window-width . 0.5)
-         (reusable-frames . nil))
+         (reusable-frames . t))
         ("*Help"
          (display-buffer-reuse-window display-buffer-in-side-window)
-         (side . left)
+         (side . right)
          (slot . 1)
          (window-width . 0.25)
-         (reusable-frames . nill))))
+         (reusable-frames . t))))
 
 ;; edit roxy template
 ;; ess-roxy-update-entry

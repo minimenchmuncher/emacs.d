@@ -26,7 +26,7 @@
 ;;; Font
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(set-face-attribute 'default nil :font "Source Code Pro-14")
+(set-face-attribute 'default nil :font "Fira Code-14")
 ;;;(set-frame-font "Source Code Pro-12")
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/colors")
