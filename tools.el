@@ -106,7 +106,8 @@
             (local-set-key (kbd "C-c <left>")  'hs-hide-block)
             (local-set-key (kbd "C-c <up>")    'hs-hide-all)
             (local-set-key (kbd "C-c <down>")  'hs-show-all)
-            (hs-minor-mode t)))
+            (hs-minor-mode t)
+            (setq-local company-dabbrev-downcase nil)))
 (autoload 'ess-rdired "ess-rdired"
     "View *R* objects in a dired-like buffer." t)
 
@@ -160,6 +161,19 @@
                                 ("return" . "")
                                 ("export" . "")
                                 ("author" . "Ezra Tucker")))
+
+(use-package xterm-color
+  
+  :init
+  (setq comint-output-filter-functions
+	(remove 'ansi-color-process-output comint-output-filter-functions))
+  
+  (add-hook 'inferior-ess-mode-hook
+	    (lambda () (add-hook 'comint-preoutput-filter-functions #'xterm-color-filter nil t)))
+  
+  :config
+  (load "xterm-color.el")
+  (setq xterm-color-use-bold t))
 
 
 (ensure-package-installed 'auto-complete)

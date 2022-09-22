@@ -26,11 +26,11 @@
 ;;; Font
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(set-face-attribute 'default nil :font "Fira Code-14")
-;;;(set-frame-font "Source Code Pro-12")
+(set-face-attribute 'default nil :font "Source Code Pro-14")
+(set-frame-font "Source Code Pro-14")
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/colors")
-(load-theme 'nord)
+(load-theme 'dracula)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; mouse options
